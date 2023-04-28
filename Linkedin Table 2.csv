@@ -1,0 +1,194 @@
+CompanyID,Company,Industry,Employee_Count,Followers
+1,PwC,Accounting,10001,4862218
+2,Growthingly,Advertising Services,30,1160
+3,IndiGo (InterGlobe Aviation Ltd),Airlines and Aviation,10001,404852
+4,The Souled Store,Apparel & Fashion,350,133046
+5,Eaton,"Appliances, Electrical, and Electronics Manufacturing",10001,1296681
+6,Honeywell,"Appliances, Electrical, and Electronics Manufacturing",10001,2300683
+7,TE Connectivity,"Appliances, Electrical, and Electronics Manufacturing",10001,487035
+8,Siemens,Automation Machinery Manufacturing,10001,5913207
+9,NatWest Group,Banking,10001,539071
+10,BNP Paribas,Banking,10001,1234052
+11,ekaterra,Beverage Manufacturing,10001,26687
+12,Roche,Biotechnology Research,10001,2836586
+13,Syneos Health Commercial Solutions,Biotechnology Research,10001,150911
+14,Wishup.co,Business Consulting and Services,350,36602
+15,PwC India,Business Consulting and Services,7500,954334
+16,Boston Consulting Group (BCG),Business Consulting and Services,10001,3529745
+17,Deloitte Asia Pacific,Business Consulting and Services,10001,7802
+18,Brainnest,Business Consulting and Services,126,208673
+19,Mactores,Business Consulting and Services,126,8412
+20,Bayer,Chemical Manufacturing,10001,4678117
+21,Ecolab,Chemical Manufacturing,10001,466359
+22,SecureLayer7,Computer and Network Security,30,18837
+23,"Alphacom, LLC",Computers and Electronics Manufacturing,6,266
+24,KiE Square Analytics,Data Infrastructure and Analytics,126,9617
+25,Datacrew.ai,Data Infrastructure and Analytics,6,171
+26,Atkins,Design,10001,758004
+27,First Rain,Design Services,30,375
+28,Arup,Design Services,10001,750241
+29,Gamahouse Publishing,Education Administration Programs,30,128
+30,Newton School,E-Learning Providers,350,76950
+31,Intern Theory,E-Learning Providers,6,233
+32,Great Learning,E-Learning Providers,3000,193401
+33,Codingal,E-Learning Providers,30,17369
+34,MiDigiWorld,E-Learning Providers,126,658
+35,Codeyoung,E-Learning Providers,350,15736
+36,Careervira,E-Learning Providers,30,1667
+37,jaro education,E-Learning Providers,750,43952
+38,PlaySimple Games,Entertainment Providers,350,42805
+39,Mahindra Group,Executive Offices,10001,1111000
+40,Just Career Management Private Limited,Executive Search Services,30,14094
+41,_Royal_,Farming,7500,3724
+42,Barclays,Financial Services,10001,1327414
+43,Synchrony,Financial Services,10001,111553
+44,Capco,Financial Services,3000,203350
+45,Bankwest,Financial Services,3000,38291
+46,Wells Fargo,Financial Services,10001,2070870
+47,VISTRA,Financial Services,7500,162463
+48,"Ameriprise Financial Services, LLC",Financial Services,7500,140763
+49,Tide,Financial Services,750,215250
+50,Global Payments Inc.,Financial Services,10001,162116
+51,Deutsche Bank,Financial Services,10001,1806593
+52,JPMorgan Chase & Co.,Financial Services,10001,3600130
+53,Yubi,Financial Services,750,52913
+54,Commonwealth Bank,Financial Services,10001,447842
+55,American Express,Financial Services,10001,1805064
+56,TresVista,Financial Services,3000,54707
+57,PayMe,Financial Services,350,8157
+58,Synapse,Financial Services,350,7059
+59,Cargill,Food and Beverage Manufacturing,10001,2077035
+60,Bhanzu,Higher Education,750,59434
+61,Labcorp,Hospitals and Health Care,10001,218321
+62,GENWORKS Health,Hospitals and Health Care,350,18784
+63,HuQuo,Human Resources Services,30,12088
+64,Excellence and Eminence Staffing,Human Resources Services,30,720
+65,SourceGrids,Human Resources Services,6,3132
+66,Acme Services,Human Resources Services,126,107632
+67,AKS ProTalent,Human Resources Services,30,323524
+68,Elixir Consulting (A Gi Group Holding company),Human Resources Services,3000,25010
+69,Danfoss,Industrial Machinery Manufacturing,10001,339106
+70,Wood Mackenzie,Information Services,3000,223159
+71,ISG (Information Services Group),Information Services,3000,38573
+72,Gartner,Information Services,10001,1487694
+73,Argus Media,Information Services,3000,43236
+74,TransOrg Analytics,Information Services,126,10984
+75,Aristocrat IT Solutions Pvt. Ltd.,Information Technology & Services,126,4475
+76,Aeries,Information Technology & Services,3000,10599
+77,Societe Generale Global Solution Centre,Information Technology & Services,7500,235137
+78,Luxoft India,Information Technology & Services,3000,8196
+79,PATH,International Affairs,3000,134902
+80,Targray,International Trade and Development,126,59701
+81,Trade Brains,Internet Publishing,30,9240
+82,FalconX,Investment Management,126,44619
+83,Accenture in India,IT Services and IT Consulting,10001,1539538
+84,Sutherland,IT Services and IT Consulting,10001,499360
+85,Rangam India,IT Services and IT Consulting,750,8285
+86,Cognizant,IT Services and IT Consulting,10001,5877476
+87,HP,IT Services and IT Consulting,10001,5160689
+88,Genpact,IT Services and IT Consulting,10001,2400396
+89,InspireXT,IT Services and IT Consulting,126,2518
+90,EXL,IT Services and IT Consulting,10001,490730
+91,Comviva,IT Services and IT Consulting,3000,154896
+92,Inquizity,IT Services and IT Consulting,30,1618
+93,FIS,IT Services and IT Consulting,10001,544298
+94,Visa,IT Services and IT Consulting,10001,1382419
+95,Capgemini,IT Services and IT Consulting,10001,5339549
+96,Softline Group,IT Services and IT Consulting,7500,55956
+97,ISOURSE TECHNOLOGIES PVT. LTD.,IT Services and IT Consulting,126,4355
+98,StatusNeo,IT Services and IT Consulting,350,10218
+99,ISAN DATA SYSTEMS PVT LTD,IT Services and IT Consulting,30,408
+100,NTT DATA Services,IT Services and IT Consulting,10001,472982
+101,NuStar Technologies,IT Services and IT Consulting,6,6868
+102,Uplers,IT Services and IT Consulting,3000,731843
+103,SoftwareOne,IT Services and IT Consulting,7500,181567
+104,Windzard Technologies,IT Services and IT Consulting,6,121
+105,INFINITY SOLUTIONS,IT Services and IT Consulting,30,1856
+106,Verizon,IT Services and IT Consulting,10001,1326851
+107,Universal Consulting,IT Services and IT Consulting,30,1404
+108,LTIMindtree,IT Services and IT Consulting,10001,161245
+109,QUASTECH,IT Services and IT Consulting,30,3015
+110,Diebold Nixdorf,IT Services and IT Consulting,10001,254901
+111,Walmart Global Tech India,IT Services and IT Consulting,7500,846472
+112,Safeguard Global,IT Services and IT Consulting,3000,71769
+113,Hitachi Vantara,IT Services and IT Consulting,7500,519857
+114,Infosys,IT Services and IT Consulting,10001,6624255
+115,Cyient,IT Services and IT Consulting,10001,312060
+116,DataChannel,IT Services and IT Consulting,30,1147
+117,Mastercard,IT Services and IT Consulting,10001,1169768
+118,PiChain,IT Services and IT Consulting,30,7022
+119,Konverge Technologies,IT Services and IT Consulting,350,5756
+120,Aptus Data Labs,IT Services and IT Consulting,126,17244
+121,Valiance Solutions,IT Services and IT Consulting,126,31527
+122,ReQlaim Technologies Private Limited,IT Services and IT Consulting,126,373
+123,Appen,IT Services and IT Consulting,750,888081
+124,VEGA Intellisoft Pvt Ltd,IT Services and IT Consulting,750,10212
+125,NTT,IT Services and IT Consulting,10001,126970
+126,Yugasa Software Labs,IT Services and IT Consulting,126,4987
+127,Conneqt Digital,IT Services and IT Consulting,10001,23550
+128,Elevate,Legal Services,3000,82811
+129,DIAGEO India,Manufacturing,3000,233520
+130,The Hershey Company,Manufacturing,10001,322877
+131,Marine Debt Management,Maritime Transportation,6,9136
+132,YouGov,Market Research,3000,354067
+133,Tata Motors,Motor Vehicle Manufacturing,10001,3394560
+134,Ford Motor Company,Motor Vehicle Manufacturing,10001,3755082
+135,Sampoorna Consultants,"Museums, Historical Sites, and Zoos",6,1286
+136,Chimes,Non-profit Organizations,3000,2919
+137,ExxonMobil,Oil and Gas,10001,2784810
+138,Cobblestone Energy,Oil and Gas,126,91346
+139,bp,Oil and Gas,10001,3282324
+140,TaskUs,Outsourcing and Offshoring Consulting,10001,157965
+141,BorderlessMind,Outsourcing and Offshoring Consulting,126,942
+142,Novartis India,Pharmaceutical Manufacturing,10001,121776
+143,Cipla,Pharmaceutical Manufacturing,10001,1071638
+144,Eli Lilly and Company,Pharmaceutical Manufacturing,10001,1412316
+145,ICON Strategic Solutions,Pharmaceutical Manufacturing,10001,219437
+146,EY,Professional Services,10001,7080117
+147,WSP,Professional Services,10001,683145
+148,ACURA SOLUTIONS LTD,Real Estate,6,11130
+149,JLL,Real Estate,10001,1620957
+150,Target,Retail,10001,1634196
+151,Viviga Ecom Pvt. Ltd,Retail,6,730
+152,Expo International,Retail Apparel and Fashion,126,29
+153,Microchip Technology Inc.,Semiconductor Manufacturing,10001,290255
+154,NICE Ltd,Software Development,7500,192738
+155,HyperVerge,Software Development,126,38759
+156,Thomson Reuters,Software Development,10001,1638759
+157,Leena AI,Software Development,350,85544
+158,Synopsys Inc,Software Development,10001,454960
+159,Accolite Digital,Software Development,3000,114405
+160,Veritas Technologies LLC,Software Development,7500,141672
+161,ACI Worldwide,Software Development,3000,129133
+162,Engati,Software Development,126,41382
+163,Zycus,Software Development,3000,389073
+164,TIBCO,Software Development,3000,180453
+165,Bazaarvoice,Software Development,3000,47532
+166,Nexplace Info Private Limited,Software Development,126,12209
+167,GE Digital,Software Development,3000,257682
+168,Climate Connect Digital,Software Development,126,8348
+169,VMware,Software Development,10001,1830105
+170,Axtria - Ingenious Insights,Software Development,3000,110602
+171,Eazy ERP Technologies Pvt Ltd,Software Development,350,2825
+172,CommerceIQ,Software Development,126,17611
+173,insightsoftware,Software Development,3000,117616
+174,TEKFORTUNE INC,Staffing and Recruiting,126,14170
+175,Invicta eSolutions Private Limited,Staffing and Recruiting,126,26502
+176,GFL Recruitment Private Limited,Staffing and Recruiting,30,2936
+177,Hire Glocal,Staffing and Recruiting,126,3259
+178,APEX Services,Staffing and Recruiting,126,21048
+179,Macropace Technologies,Staffing and Recruiting,126,9815
+180,TechnoScience (Domnic Lewis International LLC),Staffing and Recruiting,126,33069
+181,MASTER MIND CONSULTANCY,Staffing and Recruiting,30,5918
+182,TIGI HR ®,Staffing and Recruiting,126,93751
+183,apexanalytix,"Technology, Information and Internet",350,6120
+184,apna,"Technology, Information and Internet",750,97563
+185,Pocket FM,"Technology, Information and Internet",350,114551
+186,AGRIM,"Technology, Information and Internet",126,12794
+187,TradeGully,"Technology, Information and Internet",30,1738
+188,Applicantz,"Technology, Information and Internet",126,316611
+189,Amdocs,Telecommunications,10001,935592
+190,ActiveLoc,Translation and Localization,30,2429
+191,ShipBob,"Transportation, Logistics, Supply Chain and Storage",750,53338
+192,Carrier,Wholesale Building Materials,10001,190889
+193,JKCement,Wholesale Building Materials,3000,135015

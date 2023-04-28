@@ -1,0 +1,146 @@
+---1. No of jobs in different industries
+SELECT Industry, COUNT(JOBID) AS No_of_jobs  
+FROM LinkedinTable1 AS A
+JOIN LinkedinTable2 AS B
+ON A.CompanyID=B.CompanyID
+GROUP BY Industry
+ORDER BY No_of_jobs DESC;
+
+---2. No of jobs in different state
+SELECT State, COUNT(JOBID) AS No_of_jobs  FROM LinkedinTable1
+GROUP BY State
+ORDER BY No_of_jobs DESC;
+
+---3.  Generate insights into number of opening with respect to the current employee count - 
+---Number of opening in a company with more than 1000 employees in comparison to number of 
+---openings in a company with 100 employees
+WITH CTE1 AS(
+SELECT DISTINCT Company, Company_Info='Number_of_openings_in_a_company_with_more_than_1000_employees', Employee_count, JOBID
+FROM LinkedinTable1 AS A
+JOIN LinkedinTable2 AS B
+ON A.CompanyID=B.CompanyID
+WHERE Employee_count>=1000),
+CTE2 AS(
+SELECT Company_Info,COUNT(JOBID)as Number_of_openings FROM CTE1
+GROUP BY Company_Info
+),
+CTE3 AS(
+SELECT DISTINCT Company, Company_Info='Number_of_openings_in_a_company_with_less_than_100_employees', Employee_count, JOBID
+FROM LinkedinTable1 AS A
+JOIN LinkedinTable2 AS B
+ON A.CompanyID=B.CompanyID
+WHERE Employee_count<=100),
+CTE4 AS(
+SELECT Company_Info,COUNT(JOBID)as Number_of_openings FROM CTE3
+GROUP BY Company_Info
+)
+SELECT * FROM CTE2
+UNION 
+SELECT * FROM CTE4
+
+---4. Count the number of jobs across different industry across different locations. 
+---For instance, how many Frontend Engineer jobs are there in Bangalore as compared to 
+---Data Analytics jobs in Bangalore, or how many Data Analytics jobs are there in Bangalore
+---as compared to number of Data Scientists job in Gurgaon 
+SELECT Industry,City, COUNT(JOBID) AS No_of_jobs  
+FROM LinkedinTable1 AS A
+JOIN LinkedinTable2 AS B
+ON A.CompanyID=B.CompanyID
+GROUP BY Industry,city
+ORDER BY Industry,City,No_of_jobs DESC;
+
+---5.Comparison of number of jobs across different states for different level
+SELECT Level,State,count(A.Jobid) as No_of_jobs
+FROM LinkedinTable1 AS A
+JOIN linkedinTable3 AS B
+ON A.DetailID=B.DetailID
+GROUP BY Level,State
+ORDER BY Level,State;
+
+---6. No. of involvement 
+SELECT Involvement,count(Involvement) AS No_of_jobs from linkedinTable3
+GROUP BY Involvement;
+
+---7. Company with max and min no of employee
+SELECT Company, Employee_Count FROM(
+SELECT  CompanyID, Company, Employee_Count, DENSE_RANK() OVER(ORDER BY Employee_Count DESC) AS Ranking FROM LinkedinTable2) AS A
+WHERE Ranking=1 or Ranking =8
+ORDER BY Employee_Count DESC; 
+
+---8. Top 10 companies with max no of applicants
+SELECT TOP 10 Company, SUM(Applicants) AS Total_applicants FROM(
+SELECT JobID,A.CompanyID, Applicants
+FROM LinkedinTable1 AS A
+JOIN linkedinTable3 AS B
+ON A.DetailID=B.DetailID) AS D
+JOIN LinkedinTable2 AS E
+ON D.CompanyID= E.CompanyID
+GROUP BY Company
+ORDER BY Total_applicants DESC;
+
+---9. WHICH COMPANY HAS MOST No 0f OPENING AND No 0f LEAST OPENING
+WITH CTE1 AS(
+SELECT Company,	COUNT(JOBID) AS No_of_openings, DENSE_RANK() OVER(ORDER BY COUNT(JOBID) DESC) AS Ranking1
+FROM LinkedinTable1 AS A
+JOIN LinkedinTable2 AS B
+ON A.CompanyID=B.CompanyID
+GROUP BY Company
+)
+SELECT * FROM CTE1
+WHERE RANKING1=1 OR RANKING1=11;
+
+---10. Which company has more opening for different level
+WITH CTE1 AS(
+SELECT Company,Level,COUNT(JOBID) AS No_of_openings, DENSE_RANK() OVER(PARTITION BY Level ORDER BY COUNT(JOBID) DESC) AS Ranking1
+FROM LinkedinTable1 AS A
+JOIN LinkedinTable2 AS B
+ON A.CompanyID=B.CompanyID
+JOIN linkedinTable3 AS C
+ON A.DetailID=C.DetailID
+GROUP BY Company,Level
+),
+CTE2 AS(
+SELECT * FROM CTE1
+WHERE RANKING1=1)
+SELECT Company,Level,No_of_openings FROM CTE2 ;
+
+--11. Top 10 demanding jobs 
+SELECT TOP 10 Job_Title, SUM(Applicants) AS Total_no_of_applicants 
+FROM LinkedinTable1 AS A
+JOIN LinkedinTable3 AS B
+ON A.DetailID=B.DetailID
+GROUP BY Job_Title
+ORDER BY Total_no_of_applicants  DESC
+
+---12. Company has more no. of followers
+SELECT TOP 10 * FROM LinkedinTable2
+ORDER BY Followers DESC
+
+---13. Comparison between office and remote jobs
+SELECT 
+CASE WHEN LOCATION LIKE 'INDIA%' THEN 'Remote' ELSE 'Office' END AS Tag, COUNT(*) AS No_of_job
+FROM LinkedinTable1
+GROUP BY CASE WHEN LOCATION LIKE 'INDIA%' THEN 'Remote' ELSE 'Office' END;
+
+---14. Comparison of Large_scale_company and Small_scale_company which hire candiate for entry level job.
+WITH CTE1 AS(
+SELECT *, Scale ='Large_scale_company' FROM LinkedinTable2
+WHERE Employee_count > 5000
+),
+CTE2 AS(
+SELECT *, Scale ='Small_scale_company' FROM LinkedinTable2
+WHERE Employee_count < 1000
+),
+CTE3 AS(
+SELECT * FROM CTE1 
+UNION 
+SELECT * FROM CTE2
+)
+SELECT B.Scale, COUNT(A.COMPANYID) AS No_of_company
+FROM LinkedinTable1 AS A
+JOIN CTE3 AS B
+ON A.CompanyID=B.CompanyID
+JOIN LinkedinTable3 AS C
+ON A.DetailID=C.DetailID
+WHERE Level='ENTRY LEVEL'
+GROUP BY B.Scale;
